@@ -18,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.cadadosxtes_playground.books.presentation.ListBooksScreen
+import com.cadadosxtes_playground.books.presentation.books
 import com.cadadosxtes_playground.books.ui.theme.BooksTheme
 
 class MainActivity : ComponentActivity() {
@@ -58,7 +59,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             BooksTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ListBooksScreen(innerPadding)
+                    ListBooksScreen(books,innerPadding)
                 }
             }
         }

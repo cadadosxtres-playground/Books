@@ -7,7 +7,7 @@ import com.cadadosxtes_playground.books.ui.theme.PurpleGrey40
 import com.cadadosxtes_playground.books.ui.theme.PurpleGrey80
 
 data class BookVM(
-    val title: String? = null,
+    val title: String = "",
     val author: String? = null,
     val read: Boolean = false,
     val bookType: BookType = Fiction
